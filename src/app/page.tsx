@@ -1,7 +1,10 @@
 import Image from "next/image";
-import { ButtonComponent } from "@/component/buttonComponent";
-import { SearchComponent } from "@/component/searchComponent";
-import  Badgeatoms  from "@/atoms/badge"
+import { ButtonComponent } from "@/atoms/buttonatoms";
+import { SearchComponent } from "@/atoms/searchatoms";
+import  Wishatoms  from "@/atoms/badge"
+import  CartAtom from "@/atoms/cartAtoms"
+import { CatagoryAtom } from "@/atoms/catagoryAtom";
+import fruits from "../../public/fruits.png";
 export default function Home() {
   return (
     <>
@@ -10,7 +13,10 @@ export default function Home() {
     <br />
     <ButtonComponent name={"Register"}/>
     <SearchComponent/> */}
-    <Badgeatoms/>
+    {/* <Wishatoms count={100}/>
+    <CartAtom count={10}/> */}
+    {/* <CatagoryAtom path={fruits} name={"Fruits & Vegetables"}/> */}
+    
     </>
   );
 }
