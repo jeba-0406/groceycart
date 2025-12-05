@@ -2,9 +2,10 @@
 import React from 'react'
 type ButtonProps={
   name:String;
+  classname?:String|undefined;
 };
-export const ButtonComponent = ({name}:ButtonProps) => {
+export const ButtonComponent = ({name,classname}:ButtonProps) => {
   return (
-      <span>{name}</span>
+      <span className={classname}>{name}</span>
   )
 }

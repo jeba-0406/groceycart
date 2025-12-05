@@ -11,6 +11,11 @@ import fortune from "../../public/fortune.png";
 import {ButtonAtom } from "@/atoms/button";
 import {YourCardAtoms } from "@/atoms/yourcardatoms";
 import {QuantityAtom } from "@/atoms/quantity";
+import CardTotal from "@/atoms/cartTotalAtoms"
+import YourOrderAtoms from "@/atoms/yourorderAtoms";
+import MyProfileAtoms from "@/atoms/myProfileAtoms";
+import FullnameInput from "@/atoms/inputFieldAtoms";
+import ChagePasswordAtoms from "@/atoms/changePasswordAtoms";
 export default function Home() {
   return (
     <>
@@ -22,10 +27,14 @@ export default function Home() {
     <Wishatoms count={100}/>
     <CartAtom count={10}/>
     <CatagoryAtom path={fruits} name={"Fruits & Vegetables"}/>
-    <ProductAtoms path={apple} name={"100 Percent Apple Juice - 64 fl oz Bottle"} price={"30"} discountPrice={"40"}/>*/}
+    <ProductAtoms path={apple} name={"100 Percent Apple Juice - 64 fl oz Bottle"} price={"30"} discountPrice={"40"}/>
     <YourCardAtoms name={"Fortune Sunlite Refined Sunflower Oil 1 L"} Brand={"Fortune"} Quantity={"2"} price={"20"} discount={"14"} discountPrice={"10"} path={fortune}/> 
-    {/* <QuantityAtom/> */}
-    
+     */}
+    {/* <CardTotal/> */}
+    {/* <YourOrderAtoms path={fortune}/> */}
+    {/* <MyProfileAtoms/> */}
+    {/* <ChagePasswordAtoms/> */}
+
     </>
   );
 }
