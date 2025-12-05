@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import { FiUser, FiMapPin, FiHeart, FiShoppingBag, FiLogOut } from "react-icons/fi";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 type ProfileSidebarProps={
     path:StaticImageData;
 }

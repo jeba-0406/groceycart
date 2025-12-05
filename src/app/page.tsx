@@ -16,11 +16,15 @@ import { DeliveryAddressSelector } from "@/atoms/DeliveryAddressSelector";
 import ProfileSidebar from "@/atoms/ProfileSideBar";
 import {MultipleSelect} from "@/atoms/filterAtom";
 import {ProductTable} from "@/atoms/listViewTable";
-
+import CardTotal from "@/atoms/cartTotalAtoms"
+import YourOrderAtoms from "@/atoms/yourorderAtoms";
+import MyProfileAtoms from "@/atoms/myProfileAtoms";
+import FullnameInput from "@/atoms/inputFieldAtoms";
+import ChagePasswordAtoms from "@/atoms/changePasswordAtoms";
 export default function Home() {
   return (
     <>
-    {/* <h1>paramasivam</h1>
+    <h1>paramasivam</h1>
     <ButtonComponent name={"Login"}/>
     <br />
     <ButtonComponent name={"Register"}/>
@@ -28,15 +32,22 @@ export default function Home() {
     <Wishatoms count={100}/>
     <CartAtom count={10}/>
     <CatagoryAtom path={fruits} name={"Fruits & Vegetables"}/>
-    <ProductAtoms path={apple} name={"100 Percent Apple Juice - 64 fl oz Bottle"} price={"30"} discountPrice={"40"}/>*/}
-    {/* <YourCardAtoms name={"Fortune Sunlite Refined Sunflower Oil 1 L"} Brand={"Fortune"} Quantity={"2"} price={"20"} discount={"14"} discountPrice={"10"} path={fortune}/>  */}
-    {/* <QuantityAtom/> */}
-    {/* <DeliveryAddressSelector /> */}
-    {/* <ProfileSidebar path={laptop}/>
-     */}
-    {/* <MultipleSelect/> */}
+    <ProductAtoms path={apple} name={"100 Percent Apple Juice - 64 fl oz Bottle"} price={"30"} discountPrice={"40"}/>
+    <YourCardAtoms name={"Fortune Sunlite Refined Sunflower Oil 1 L"} Brand={"Fortune"} Quantity={"2"} price={"20"} discount={"14"} discountPrice={"10"} path={fortune}/> 
+    <QuantityAtom/>
+    <DeliveryAddressSelector />
+    <ProfileSidebar path={laptop}/>
+    
+    <MultipleSelect/>
     <ProductTable/>
    
+    <ProductAtoms path={apple} name={"100 Percent Apple Juice - 64 fl oz Bottle"} price={"30"} discountPrice={"40"}/>
+    <YourCardAtoms name={"Fortune Sunlite Refined Sunflower Oil 1 L"} Brand={"Fortune"} Quantity={"2"} price={"20"} discount={"14"} discountPrice={"10"} path={fortune}/> 
+    <CardTotal/> 
+    <YourOrderAtoms path={fortune}/>
+     <MyProfileAtoms/> 
+     <ChagePasswordAtoms/>
+
     </>
   );
 }

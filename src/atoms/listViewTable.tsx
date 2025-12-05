@@ -47,11 +47,7 @@ export  function ProductTable() {
     },
   ];
 
-  const toggleSelect = (id) => {
-    setSelected((prev) =>
-      prev.includes(id) ? prev.filter((p) => p !== id) : [...prev, id]
-    );
-  };
+ 
 
   return (
     <div className="w-full overflow-x-auto border rounded-lg bg-white shadow-sm">
