@@ -1,5 +1,7 @@
 import React from 'react'
-
+type ButtonAtomProps={
+  name:String;
+}
 export const ButtonAtom = ({
   label = "Add to Cart",
   width = "10.5625rem",
@@ -7,25 +9,8 @@ export const ButtonAtom = ({
   textColor = "#02B290",
   borderColor = "#02B290",
   onClick = () => {}
-}) => {
+}{name}:ButtonAtomProps) => {
   return (
-    <button
-      onClick={onClick}
-      className={`
-        font-bold 
-        rounded-[5px] 
-        text-[.875rem]
-        border-[1px]
-      `}
-      style={{
-        width,
-        height,
-        color: textColor,
-        borderColor: borderColor
-      }}
-    >
-      {label}
-    </button>
-  );
-};
-
+    <button className='w-[10.5625rem] h-[2.1875rem] border-[1px] text-[#02B290] text-[.875rem] border-[#02B290] rounded-[5px]  font-bold'>Add to Cart</button>
+  )
+}
